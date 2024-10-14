@@ -1,0 +1,32 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <div class="row">
+        <h2 class="fs-4 text-danger text-center">Welcome to First Step Milk!</h2><br>
+        <p class="fs-4 text-center">At First Step Milk, we are committed to transforming the agricultural landscape by empowering the farmer community and delivering high-quality products to our customers. With a focus on innovation, sustainability, and building strong relationships, we strive to meet the ever-evolving needs of the agricultural sector.</p>
+    </div>
+    <br>    
+    <h2 class="text-center">Mission</h2>
+    <div class="row">
+        <p class="fs-4 text-center">To delight our customers by anticipating, understanding, and responding to their needs. We do this by creating high-quality products and making them available through innovative and convenient channels. Whether it’s by offering fresh produce, cutting-edge farming technology, or sustainable solutions, we are dedicated to making a positive impact on the lives of our customers and farming partners.</p>
+    </div>
+    <br>
+    <div class="row">
+        <h4 class="text-center">Why Choose Us?</h4>
+        <p class="fs-4 text-center">
+            By choosing Our Company, you’re not just buying a product—you’re supporting a movement. A movement that uplifts farmers, fosters sustainable agriculture, and delivers high-quality, innovative solutions to your doorstep. We believe in creating a better future, one relationship at a time.
+        </p>
+        <p class="fs-4 text-center">
+            Join us in our journey to revolutionize agriculture and make a lasting impact on communities around the world!
+        </p>
+        <div class="text-center">
+            <a href="{% url 'contact' %}" class="btn btn-primary">Join Us</a> <!-- Call to action button -->
+        </div>
+    </div>
+</div>
+<br><br>
+{% endblock main-content %}
